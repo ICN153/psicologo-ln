@@ -1,0 +1,213 @@
+* {
+  font-family: "Teko", sans-serif;
+  text-transform: uppercase;
+}
+
+body,
+html {
+  margin: 0;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  font-size: 18px;
+  line-height: 120%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  background-image: linear-gradient(to bottom, #c6c8ec, #f1f0f6);
+  padding-top: 18px;
+  padding-bottom: 18px;
+  top: 0;
+  position: sticky;
+  z-index: 100;
+  top: 0;
+}
+
+.container {
+  max-width: 1140px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  width: 75px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #585858;
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 105px;
+  display: flex;
+  justify-content: space-between;
+  display: inline-block;
+}
+
+.menu a:hover {
+  color: rgb(9, 9, 9);
+}
+
+.hero-section {
+  text-align: center;
+  margin: auto;
+  max-width: 800px;
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 75vh;
+}
+
+.hero-section {
+  max-width: 100%;
+  background-image: url(../img/img.1.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+  padding: 100px 0;
+}
+.hero-section .content h1 {
+  max-width: 838px;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 88%;
+  text-align: left;
+  margin-right: 150px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: #dedaf6;
+}
+
+.main-container {
+  background-color: #c9c9c9;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar {
+  padding: 32px;
+  display: flex;
+  align-items: center;
+}
+.sidebar .bar {
+  display: flex;
+  flex-direction: column;
+}
+.sidebar .bar h2 {
+  font-size: 42px;
+  color: #0c0c0c;
+}
+.sidebar .bar p {
+  font-size: 18px;
+  text-align: justify;
+  grid-template-columns: 1fr 1.5fr;
+  margin-bottom: 14px;
+  color: #000000;
+}
+.sidebar .image {
+  max-width: 100%;
+}
+.sidebar .image img {
+  width: auto;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-left: 48px;
+  border-radius: 16px;
+}
+
+.tratar-hero .container .paragraf h3 {
+  font-size: 54px;
+  text-align: center;
+  margin: 18px auto;
+}
+.tratar-hero .container .conteudo-1, .tratar-hero .container .conteudo-2, .tratar-hero .container .conteudo-3 {
+  display: flex;
+  justify-content: center;
+}
+.tratar-hero .container .conteudo-1 .top-1, .tratar-hero .container .conteudo-1 .top-2, .tratar-hero .container .conteudo-1 .top-3, .tratar-hero .container .conteudo-2 .top-1, .tratar-hero .container .conteudo-2 .top-2, .tratar-hero .container .conteudo-2 .top-3, .tratar-hero .container .conteudo-3 .top-1, .tratar-hero .container .conteudo-3 .top-2, .tratar-hero .container .conteudo-3 .top-3 {
+  margin: 14px;
+  border: 1px none;
+  max-width: 500px;
+  padding: 14px;
+  border-radius: 15px;
+  background-color: #f2f4f6;
+  box-shadow: 0 0 10px rgba(66, 95, 240, 0.5);
+  position: relative;
+  transition: box-shadow 0.3s ease;
+}
+.tratar-hero .container .conteudo-1 .top-1:hover, .tratar-hero .container .conteudo-1 .top-2:hover, .tratar-hero .container .conteudo-1 .top-3:hover, .tratar-hero .container .conteudo-2 .top-1:hover, .tratar-hero .container .conteudo-2 .top-2:hover, .tratar-hero .container .conteudo-2 .top-3:hover, .tratar-hero .container .conteudo-3 .top-1:hover, .tratar-hero .container .conteudo-3 .top-2:hover, .tratar-hero .container .conteudo-3 .top-3:hover {
+  box-shadow: 0 0 20px rgba(66, 95, 240, 0.8);
+}
+.tratar-hero .container .conteudo-1 .top-1:hover::before, .tratar-hero .container .conteudo-1 .top-1:hover::after, .tratar-hero .container .conteudo-1 .top-2:hover::before, .tratar-hero .container .conteudo-1 .top-2:hover::after, .tratar-hero .container .conteudo-1 .top-3:hover::before, .tratar-hero .container .conteudo-1 .top-3:hover::after, .tratar-hero .container .conteudo-2 .top-1:hover::before, .tratar-hero .container .conteudo-2 .top-1:hover::after, .tratar-hero .container .conteudo-2 .top-2:hover::before, .tratar-hero .container .conteudo-2 .top-2:hover::after, .tratar-hero .container .conteudo-2 .top-3:hover::before, .tratar-hero .container .conteudo-2 .top-3:hover::after, .tratar-hero .container .conteudo-3 .top-1:hover::before, .tratar-hero .container .conteudo-3 .top-1:hover::after, .tratar-hero .container .conteudo-3 .top-2:hover::before, .tratar-hero .container .conteudo-3 .top-2:hover::after, .tratar-hero .container .conteudo-3 .top-3:hover::before, .tratar-hero .container .conteudo-3 .top-3:hover::after {
+  animation: borderAnimation 1s infinite alternate ease-in-out;
+}
+.tratar-hero .container .conteudo-1 .top-1::before, .tratar-hero .container .conteudo-1 .top-1::after, .tratar-hero .container .conteudo-1 .top-2::before, .tratar-hero .container .conteudo-1 .top-2::after, .tratar-hero .container .conteudo-1 .top-3::before, .tratar-hero .container .conteudo-1 .top-3::after, .tratar-hero .container .conteudo-2 .top-1::before, .tratar-hero .container .conteudo-2 .top-1::after, .tratar-hero .container .conteudo-2 .top-2::before, .tratar-hero .container .conteudo-2 .top-2::after, .tratar-hero .container .conteudo-2 .top-3::before, .tratar-hero .container .conteudo-2 .top-3::after, .tratar-hero .container .conteudo-3 .top-1::before, .tratar-hero .container .conteudo-3 .top-1::after, .tratar-hero .container .conteudo-3 .top-2::before, .tratar-hero .container .conteudo-3 .top-2::after, .tratar-hero .container .conteudo-3 .top-3::before, .tratar-hero .container .conteudo-3 .top-3::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  border: 2px solid transparent;
+  pointer-events: none;
+  box-sizing: border-box;
+  transition: width 0.3s ease;
+}
+.tratar-hero .container .conteudo-1 .top-1::before, .tratar-hero .container .conteudo-1 .top-2::before, .tratar-hero .container .conteudo-1 .top-3::before, .tratar-hero .container .conteudo-2 .top-1::before, .tratar-hero .container .conteudo-2 .top-2::before, .tratar-hero .container .conteudo-2 .top-3::before, .tratar-hero .container .conteudo-3 .top-1::before, .tratar-hero .container .conteudo-3 .top-2::before, .tratar-hero .container .conteudo-3 .top-3::before {
+  top: 0;
+  left: 0;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+}
+.tratar-hero .container .conteudo-1 .top-1::after, .tratar-hero .container .conteudo-1 .top-2::after, .tratar-hero .container .conteudo-1 .top-3::after, .tratar-hero .container .conteudo-2 .top-1::after, .tratar-hero .container .conteudo-2 .top-2::after, .tratar-hero .container .conteudo-2 .top-3::after, .tratar-hero .container .conteudo-3 .top-1::after, .tratar-hero .container .conteudo-3 .top-2::after, .tratar-hero .container .conteudo-3 .top-3::after {
+  bottom: 0;
+  right: 0;
+  border-top-color: transparent;
+  border-left-color: transparent;
+}
+.tratar-hero .container .conteudo-1 .top-1 span, .tratar-hero .container .conteudo-1 .top-2 span, .tratar-hero .container .conteudo-1 .top-3 span, .tratar-hero .container .conteudo-2 .top-1 span, .tratar-hero .container .conteudo-2 .top-2 span, .tratar-hero .container .conteudo-2 .top-3 span, .tratar-hero .container .conteudo-3 .top-1 span, .tratar-hero .container .conteudo-3 .top-2 span, .tratar-hero .container .conteudo-3 .top-3 span {
+  font-size: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tratar-hero .container .conteudo-1 .top-1 p, .tratar-hero .container .conteudo-1 .top-2 p, .tratar-hero .container .conteudo-1 .top-3 p, .tratar-hero .container .conteudo-2 .top-1 p, .tratar-hero .container .conteudo-2 .top-2 p, .tratar-hero .container .conteudo-2 .top-3 p, .tratar-hero .container .conteudo-3 .top-1 p, .tratar-hero .container .conteudo-3 .top-2 p, .tratar-hero .container .conteudo-3 .top-3 p {
+  font-size: 16px;
+  color: #000000;
+  text-align: center;
+}
+
+@keyframes borderAnimation {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(3);
+  }
+}
