@@ -242,4 +242,45 @@ a {
     }
   }
 
+.main-hero{
+  background-image: linear-gradient(to top, #ccccf0, #ffffff);
+  margin-top: 24px;
   
+  .hero-content{
+    display: flex;
+    align-items: center;
+    gap: 34px;
+    margin: 67px;
+  }
+  .image-container{
+    
+    img{
+      width: 400px;
+      height: 400px;
+      border-radius: 50%;
+      box-shadow: 0px 0px 10px 5px rgba(39, 42, 112, 0.4);
+      object-fit: cover;
+      margin-right: 34px;
+    }
+  }
+  .sobre-mim{
+    
+    margin: 5px;
+  }
+  #h-title{
+    font-size: 70px;
+    text-align: center;
+    color: #000000;
+  }
+  #nome{
+    font-size: 35px;
+    text-align: center;
+  }
+  p{
+    
+    font-size: 20px;
+    text-align: justify;
+    align-items: center;
+    
+  }
+}

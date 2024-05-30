@@ -211,3 +211,39 @@ a {
     transform: scaleX(3);
   }
 }
+.main-hero {
+  background-image: linear-gradient(to top, #ccccf0, #ffffff);
+  margin-top: 24px;
+}
+.main-hero .hero-content {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+  margin: 67px;
+}
+.main-hero .image-container img {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px 5px rgba(39, 42, 112, 0.4);
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 34px;
+}
+.main-hero .sobre-mim {
+  margin: 5px;
+}
+.main-hero #h-title {
+  font-size: 70px;
+  text-align: center;
+  color: #000000;
+}
+.main-hero #nome {
+  font-size: 35px;
+  text-align: center;
+}
+.main-hero p {
+  font-size: 20px;
+  text-align: justify;
+  align-items: center;
+}
