@@ -1,3 +1,38 @@
+@charset "UTF-8";
+.bg-gradient-custom {
+  background-image: linear-gradient(to top, #f2f2f8, #d5d6f9);
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  padding: 15px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.title-acordeon {
+  margin-top: 20px;
+}
+
+.accordion-button {
+  background-color: #6baaee;
+  color: #fff;
+  width: 100%;
+  text-align: left;
+}
+.accordion-button:hover {
+  background-color: #4d9aed;
+}
+
+.accordion-body {
+  background-color: #dbe2fa;
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  border: 1px solid #dee2e6;
+  width: 100%;
+}
+
 * {
   font-family: "Teko", sans-serif;
   text-transform: uppercase;
@@ -147,6 +182,7 @@ a {
   font-size: 54px;
   text-align: center;
   margin: 18px auto;
+  text-shadow: 2px 2px 4px rgba(14, 10, 146, 0.5);
 }
 .tratar-hero .container .conteudo-1, .tratar-hero .container .conteudo-2, .tratar-hero .container .conteudo-3 {
   display: flex;
@@ -237,6 +273,7 @@ a {
   font-size: 70px;
   text-align: center;
   color: #000000;
+  text-shadow: 2px 2px 4px rgba(14, 10, 146, 0.5);
 }
 .main-hero #nome {
   font-size: 35px;
@@ -246,4 +283,47 @@ a {
   font-size: 20px;
   text-align: justify;
   align-items: center;
+}
+
+.acordion-hero .container {
+  display: block;
+  justify-content: center;
+  text-align: center;
+}
+.acordion-hero h2 {
+  font-size: 65px;
+  margin-top: 42px;
+  text-shadow: 2px 2px 4px rgba(14, 10, 146, 0.5);
+}
+
+.form-hero {
+  display: block;
+  margin-bottom: 64px;
+}
+.form-hero input,
+.form-hero textarea {
+  display: block;
+  width: 50%; /* Alterei para 100% para melhorar a responsividade */
+  height: 40px;
+  padding: 10px; /* Reativado o padding */
+  box-sizing: border-box;
+  font-size: 18px;
+  margin-top: 12px;
+}
+.form-hero textarea {
+  height: 140px;
+}
+.form-hero button {
+  color: #000000;
+  margin-top: 12px;
+  font-size: 18px;
+  padding: 10px 60px 6px 60px;
+  display: inline-block;
+  cursor: pointer; /* Retirado o comentário para reativar o cursor */
+  transition: 0.3s; /* Corrigido o erro de sintaxe */
+  background-color: #2888ef;
+}
+.form-hero button:hover {
+  transform: scale(0.96);
+  background-color: #69a4e3;
 }

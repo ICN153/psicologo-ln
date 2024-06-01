@@ -1,3 +1,53 @@
+// Variáveis
+// Variáveis
+$container-width: 80%;
+$container-max-width: 1200px;
+$container-padding: 15px;
+
+.bg-gradient-custom {
+  
+  background-image: linear-gradient(to top, #f2f2f8, #d5d6f9);
+  //margin-top: 24px;
+
+
+}
+// Estilos para centralizar o container
+.container {
+  width: $container-width;
+  max-width: $container-max-width;
+  padding: $container-padding;
+  margin: 0 auto; // Centraliza o container
+  box-sizing: border-box;
+  //margin-bottom: 32px;
+}
+
+.title-acordeon {
+  margin-top: 20px; // Adiciona margem superior para espaçamento
+}
+
+.accordion-button {
+  background-color: #6baaee;
+  color: #fff;
+  width: 100%; // Garante que o botão ocupe a largura total
+  text-align: left; // Alinha o texto à esquerda
+  
+  &:hover {
+    background-color: #4d9aed;
+  }
+  
+}
+
+
+.accordion-body {
+  background-color: #dbe2fa;
+ color: rgb(0, 0, 0);
+  padding: 20px;
+  border: 1px solid #dee2e6;
+  width: 100%; // Garante que o corpo do acordeão ocupe a largura total
+}
+
+
+
 * {
   font-family: "Teko", sans-serif;
   text-transform: uppercase;
@@ -165,6 +215,7 @@ a {
           font-size: 54px;
           text-align: center;
           margin: 18px auto;
+          text-shadow: 2px 2px 4px rgba(14, 10, 146, 0.5);
         }
       }
   
@@ -271,6 +322,7 @@ a {
     font-size: 70px;
     text-align: center;
     color: #000000;
+    text-shadow: 2px 2px 4px rgba(14, 10, 146, 0.5);
   }
   #nome{
     font-size: 35px;
@@ -282,5 +334,53 @@ a {
     text-align: justify;
     align-items: center;
     
+  }
+}
+
+.acordion-hero{
+  .container{
+    display: block;
+    justify-content: center;
+    text-align: center;
+  }
+  h2{
+    font-size: 65px;
+    margin-top: 42px;
+    text-shadow: 2px 2px 4px rgba(14, 10, 146, 0.5);
+  }
+}
+
+.form-hero {
+    display: block;
+    margin-bottom: 64px;
+  input,
+  textarea {
+    display: block;
+    width: 50%; /* Alterei para 100% para melhorar a responsividade */
+    height: 40px;
+    padding: 10px; /* Reativado o padding */
+    box-sizing: border-box;
+    font-size: 18px;
+    margin-top: 12px;
+  }
+
+  textarea {
+    height: 140px;
+  }
+
+  button {
+    color: #000000;
+    margin-top: 12px;
+    font-size: 18px;
+    padding: 10px 60px 6px 60px;
+    display: inline-block;
+    cursor: pointer; /* Retirado o comentário para reativar o cursor */
+    transition: 0.3s; /* Corrigido o erro de sintaxe */
+    background-color: #2888ef;
+
+    &:hover {
+      transform: scale(0.96);
+      background-color: #69a4e3;
+    }
   }
 }
