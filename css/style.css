@@ -316,7 +316,7 @@ a {
 .form-hero button {
   color: #000000;
   margin-top: 12px;
-  font-size: 18px;
+  font-size: 20px;
   padding: 10px 60px 6px 60px;
   display: inline-block;
   cursor: pointer; /* Retirado o comentário para reativar o cursor */
@@ -326,4 +326,36 @@ a {
 .form-hero button:hover {
   transform: scale(0.96);
   background-color: #69a4e3;
+}
+.form-hero .content-title {
+  margin-bottom: 24px;
+}
+.form-hero .content-title #title-form {
+  font-size: 76px;
+  line-height: 90%;
+  margin-bottom: 24px;
+  text-shadow: 2px 2px 4px rgba(14, 10, 146, 0.4);
+}
+.form-hero .content-title #text-form {
+  font-size: 24px;
+  margin-bottom: 24px;
+  width: 54%;
+}
+
+.canal .container .canal-video h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 54px;
+}
+.canal .container .canal-video .video-container {
+  gap: 12px;
+  display: block;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.canal .container .canal-video .video-container iframe {
+  border-radius: 10px;
+  flex: 0 1 auto;
+  width: 300px;
+  height: 300px;
 }
