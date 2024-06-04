@@ -402,31 +402,3 @@ a {
     }
   }
 }
-
-.canal {
-  .container {
-      .canal-video {
-          h2 {
-              margin-bottom: 20px;
-              text-align: center;
-              font-size: 54px;
-          }
-
-          .video-container {
-              gap: 12px;
-              display: block;
-              justify-content: space-between; // Espaço entre os iframes
-              flex-wrap: nowrap; // Não permite que os iframes passem para a próxima linha
-
-              iframe {
-               
-                border-radius: 10px;
-                  flex: 0 1 auto; // Fixa a largura dos iframes
-                  width: 300px; // Largura fixa
-                  height: 300px; // Altura fixa
-                  
-              }
-          }
-      }
-  }
-}
