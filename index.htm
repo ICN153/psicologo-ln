@@ -3,10 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -32,15 +28,18 @@
       crossorigin="anonymous"
     ></script>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
     <title>Psicólogo Lenilson</title>
   </head>
   <body>
     <header class="header">
       <div class="backgroun-image">
         <div class="container">
-          <div class="logo">
-            <img src="img/psicologia.png" alt="" />
-          </div>
+          
+              <div class="logo">
+                <img src="img/psicologia.png" alt="" />
+              </div>
 
           <nav class="menu">
             <a href="#">Bem Vindo</a>
@@ -290,24 +289,95 @@
       </div>
     </div> 
 
+    <div class="container form-hero">
+      <div class="form-image">
+        <img src="img/Anim_Psychology1-5a625b6f9e942700366bb7f0.gif" alt="">
+      </div>
+    
+      <div class="content-title">
+        <h2 id="title-form">Vamos Conversar</h2>
+        <p id="text-form">Estamos aqui para responder a todas as suas perguntas, ouvir suas sugestões e ajudar você a iniciar uma nova jornada de vida.</p>
+        <form action="#">
+          <input type="text" placeholder="Digite Seu Nome" required minlength="3" maxlength="30">
+          <input type="email" placeholder="Digite Seu Email" required>
+          <input type="text" placeholder="Digite Seu Telefone" required>
+          <textarea placeholder="Digite Sua Mensagem"></textarea>
+          <button type="submit" class="btn btn-outline">Enviar Mensagem</button>
+        </form>
+      </div>
+    </div>
+    
+    
+    <section class="swiper-hero">
+        <!-- Slider main container -->
+        <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <h3>Maria, 35 anos:</h3>
+          <p>A terapia mudou minha vida. Eu costumava me sentir constantemente ansiosa e deprimida, mas após alguns meses de sessões semanais, comecei a perceber uma mudança significativa. Aprendi a lidar melhor com minhas emoções e agora tenho ferramentas para enfrentar situações estressantes de maneira mais saudável.</p>
+        </div>
 
-<div class="container form-hero">
+        <div class="swiper-slide">
 
-  <div class="content-title">
-    <h2 id="title-form">Vamos Conversa</h2>
-    <p id="text-form">Estamos aqui para responder a todas as suas perguntas, ouvir suas sugestões e ajudar você a iniciar uma nova jornada de vida.</p>
-    <form action="#">
-      <input type="text" placeholder="Digite Seu Nome" required minlength="3" maxlength="30">
-      <input type="email" placeholder="Digite Seu Email" required>
-      <input type="text" placeholder="Digite Seu Telefone" required>
+          <h3>João, 42 anos:</h3>
+          <p>Antes da terapia, meu casamento estava em crise e eu me sentia perdido. Com a ajuda da minha terapeuta, consegui entender melhor meus próprios sentimentos e aprendi a me comunicar de forma mais eficaz com minha esposa. Hoje, nosso relacionamento está mais forte do que nunca e sou eternamente grato por isso.</p>
 
-      <textarea placeholder="Digite Sua Mensagem"></textarea>
+        </div>
+        <div class="swiper-slide">
 
-      <button type="submit" class="btn btn-outline">Enviar Mensagem</button>
-      
-    </form>
-  </div>
-</div>
+          <h3>Ana, 28 anos:</h3>
+          <p>Eu estava lutando com baixa autoestima e insegurança desde a adolescência. Através da terapia, consegui identificar as raízes desses sentimentos e trabalhar para superá-los. Agora, me sinto muito mais confiante e segura de mim mesma, tanto na vida pessoal quanto na profissional.</p>
+
+        </div>
+
+        <div class="swiper-slide">
+
+          <h3>Carlos, 50 anos:</h3>
+          <p>A terapia me ajudou a lidar com o luto após a perda de um ente querido. No início, eu estava devastado e não sabia como seguir em frente. Minha terapeuta me deu o suporte emocional e as técnicas necessárias para processar meu luto de maneira saudável. Hoje, consigo lembrar com carinho e seguir em frente com minha vida.</p>
+
+        </div>
+        <div class="swiper-slide">
+
+          <h3>Fernanda, 31 anos:</h3>
+          <p>Eu sofria de ataques de pânico frequentes que estavam afetando minha vida diária. Através da terapia cognitivo-comportamental, aprendi a identificar os gatilhos dos meus ataques e desenvolver estratégias para manejá-los. Agora, os ataques são muito menos frequentes e eu me sinto mais no controle da minha vida.</p>
+          
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+        </div>
+        <div class="pagination">
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        </div>
+
+        </div>
+    </section>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>  
+<script>
+const swiper = new Swiper('.swiper', {
+  speed: 400,
+  spaceBetween: 10,
+  slidesPerView: 1,
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets', 
+    clickable: true
+  }, // Adicione uma vírgula aqui
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  }
+});
+
+
+</script>
 <body>
 </html>
     

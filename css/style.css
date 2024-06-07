@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .bg-gradient-custom {
   background-image: linear-gradient(to top, #f2f2f8, #d5d6f9);
 }
@@ -36,6 +35,9 @@
 * {
   font-family: "Teko", sans-serif;
   text-transform: uppercase;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body,
@@ -297,15 +299,42 @@ a {
 }
 
 .form-hero {
-  display: block;
-  margin-bottom: 64px;
+  margin-bottom: 34px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+.form-hero .form-image {
+  margin-top: 75px;
+  margin-right: 80px;
+}
+.form-hero .form-image img {
+  max-width: 120%;
+  margin-top: 14px;
+  border-radius: 15px;
+}
+.form-hero .content-title {
+  flex-grow: 1;
+  margin-bottom: 24px;
+}
+.form-hero .content-title #title-form {
+  font-size: 66px;
+  line-height: 90%;
+  margin-bottom: 24px;
+  text-shadow: 2px 2px 4px rgba(14, 10, 146, 0.4);
+}
+.form-hero .content-title #text-form {
+  font-size: 24px;
+  margin-bottom: 24px;
+  width: 100%;
 }
 .form-hero input,
 .form-hero textarea {
   display: block;
-  width: 50%; /* Alterei para 100% para melhorar a responsividade */
+  width: 90%;
   height: 40px;
-  padding: 10px; /* Reativado o padding */
+  padding: 10px;
   box-sizing: border-box;
   font-size: 18px;
   margin-top: 12px;
@@ -319,25 +348,78 @@ a {
   font-size: 20px;
   padding: 10px 60px 6px 60px;
   display: inline-block;
-  cursor: pointer; /* Retirado o comentário para reativar o cursor */
-  transition: 0.3s; /* Corrigido o erro de sintaxe */
+  cursor: pointer;
+  transition: 0.3s;
   background-color: #2888ef;
 }
 .form-hero button:hover {
   transform: scale(0.96);
   background-color: #69a4e3;
 }
-.form-hero .content-title {
-  margin-bottom: 24px;
+
+.swiper-hero {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
 }
-.form-hero .content-title #title-form {
-  font-size: 76px;
-  line-height: 90%;
-  margin-bottom: 24px;
-  text-shadow: 2px 2px 4px rgba(14, 10, 146, 0.4);
+.swiper-hero .swiper {
+  background-color: rgb(235, 240, 247);
+  box-shadow: 0px 0px 10px 5px rgba(39, 42, 112, 0.4);
+  width: 80%;
+  height: calc(65vh - 4rem);
+  border-color: #dce3e9;
+  border-radius: 12px;
 }
-.form-hero .content-title #text-form {
+.swiper-hero .swiper-wrapper {
+  margin: 0 auto;
+  align-items: center;
+  text-align: center;
+}
+.swiper-hero .swiper-wrapper .swiper-slide {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.swiper-hero .swiper-wrapper .swiper-slide h3 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  font-size: 60px;
+  margin: 34px;
+  text-shadow: 2px 2px 4px rgba(77, 72, 233, 0.5);
+}
+.swiper-hero .swiper-wrapper .swiper-slide p {
+  display: flex;
+  justify-content: center;
   font-size: 24px;
-  margin-bottom: 24px;
-  width: 54%;
+  text-align: center;
+  margin: 34px;
+}
+.swiper-hero .swiper-wrapper .pagination {
+  position: absolute;
+  width: 90%;
+}
+.swiper-hero .swiper-wrapper .pagination .pagination_div[class^=swiper-button]::after {
+  display: none;
+}
+.swiper-hero .swiper-wrapper .pagination .swiper-pagination-bullet-active {
+  width: 20px;
+  border-radius: 4px;
+  background-color: #86bcf5;
+}
+.swiper-hero .swiper-wrapper .pagination .pagination_div[class^=swiper-button] {
+  width: 45px;
+  height: 45px;
+  border: 1px solid rgb(75, 75, 75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
 }
