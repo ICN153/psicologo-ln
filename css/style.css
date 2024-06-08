@@ -68,12 +68,9 @@ a {
 
 .header {
   background-image: linear-gradient(to bottom, #c6c8ec, #f1f0f6);
-  padding-top: 18px;
-  padding-bottom: 18px;
   top: 0;
   position: sticky;
   z-index: 100;
-  top: 0;
 }
 
 .container {
@@ -87,9 +84,14 @@ a {
   justify-content: space-between;
   align-items: center;
 }
-
-.logo img {
+.container .logo img {
   width: 75px;
+}
+.container .none {
+  text-align: center;
+  margin-left: 50px;
+  color: #000000;
+  padding: 1px;
 }
 
 .menu a {
@@ -372,6 +374,12 @@ a {
   border-color: #dce3e9;
   border-radius: 12px;
 }
+.swiper-hero .swiper h2 {
+  text-align: center;
+  margin: 24px;
+  font-size: 55px;
+  text-shadow: 2px 2px 4px rgba(77, 72, 233, 0.5);
+}
 .swiper-hero .swiper-wrapper {
   margin: 0 auto;
   align-items: center;
@@ -391,9 +399,8 @@ a {
   justify-content: center;
   align-items: center;
   color: rgb(0, 0, 0);
-  font-size: 60px;
-  margin: 34px;
-  text-shadow: 2px 2px 4px rgba(77, 72, 233, 0.5);
+  font-size: 30px;
+  margin: 14px;
 }
 .swiper-hero .swiper-wrapper .swiper-slide p {
   display: flex;
@@ -422,4 +429,75 @@ a {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+}
+
+.icon .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon .container .icon-button {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.icon .container .icon-button h1 {
+  font-size: 64px;
+}
+.icon .container .icon-button .img-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon .container .icon-button .img-icon img {
+  width: 150px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  margin: 12px;
+}
+.icon .container .icon-button img:hover {
+  transform: scale(1.2);
+}
+.icon .container .icon-button p {
+  font-size: 34px;
+  margin: 24px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.icon .container .icon-button button {
+  width: 90%;
+  height: 60px;
+  border-radius: 12px;
+  color: #000000;
+  margin-top: 12px;
+  font-size: 24px;
+  padding: 10px 50px 6px 50px;
+  display: inline-block;
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: #59f375;
+  border: none;
+  margin-bottom: 24px;
+}
+.icon .container .icon-button button:hover {
+  transform: scale(0.96);
+  background-color: #b0f0b2;
+}
+
+.whatsapp-ico-1 {
+  position: fixed;
+  bottom: 0;
+  right: 30px;
+  flex-direction: row-reverse;
+  z-index: 999;
+}
+.whatsapp-ico-1 img {
+  width: 80px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.whatsapp-ico-1 img:hover {
+  transform: scale(1.2);
 }
