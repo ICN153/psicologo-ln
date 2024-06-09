@@ -509,35 +509,6 @@ a {
     }
   }
 }
-
-.icon {
-  .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    .icon-button {
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      align-items: center;
-    
-
-      h1 {
-        font-size: 64px;
-      }
-.img-icon{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-      
-     img {
-      width: 150px;
-    transition: transform 0.3s ease; // Adiciona transição suave à transformação
-    cursor: pointer;
-    margin: 12px;
- }
-}
 .icon {
   .container {
     display: flex;
@@ -561,25 +532,24 @@ a {
 
         img {
           width: 150px;
-          transition: transform 0.3s ease; // Adiciona transição suave à transformação
+          transition: transform 0.3s ease;
           cursor: pointer;
           margin: 12px;
-        }
 
-        img:hover {
-          transform: scale(1.2); // Aumenta o tamanho da imagem em 20% ao passar o mouse
+          &:hover {
+            transform: scale(1.2);
+          }
         }
       }
 
       p {
         font-size: 34px;
         margin: 24px;
-        cursor: pointer;
         text-decoration: underline;
       }
 
-      button {
-        width: 90%; // Alterado para ocupar toda a largura disponível
+      .contact-button{
+        width: 90%;
         height: 60px;
         border-radius: 12px;
         color: #000000;
@@ -589,7 +559,7 @@ a {
         display: inline-block;
         cursor: pointer;
         transition: transform 0.3s, background-color 0.3s; // Adiciona transição suave
-        background-color: #59f375;
+        background-color: #a4f694;
         border: none;
         margin-bottom: 24px;
 
@@ -603,18 +573,20 @@ a {
 }
 
 .whatsapp-ico-1 {
+  flex-direction: row-reverse;
   position: fixed;
   bottom: 0;
   right: 30px;
   z-index: 999;
-  
+
   img {
     width: 80px;
     height: auto;
     cursor: pointer;
-    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.2);
+      transition: transform 0.3s ease;
+    }
   }
-  
-  img:hover {
-    transform: scale(1.2);
-  }
+}

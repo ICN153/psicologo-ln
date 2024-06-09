@@ -456,16 +456,15 @@ a {
   cursor: pointer;
   margin: 12px;
 }
-.icon .container .icon-button img:hover {
+.icon .container .icon-button .img-icon img:hover {
   transform: scale(1.2);
 }
 .icon .container .icon-button p {
   font-size: 34px;
   margin: 24px;
-  cursor: pointer;
   text-decoration: underline;
 }
-.icon .container .icon-button button {
+.icon .container .icon-button .contact-button {
   width: 90%;
   height: 60px;
   border-radius: 12px;
@@ -475,29 +474,29 @@ a {
   padding: 10px 50px 6px 50px;
   display: inline-block;
   cursor: pointer;
-  transition: 0.3s;
-  background-color: #59f375;
+  transition: transform 0.3s, background-color 0.3s;
+  background-color: #a4f694;
   border: none;
   margin-bottom: 24px;
 }
-.icon .container .icon-button button:hover {
+.icon .container .icon-button .contact-button:hover {
   transform: scale(0.96);
   background-color: #b0f0b2;
 }
 
 .whatsapp-ico-1 {
+  flex-direction: row-reverse;
   position: fixed;
   bottom: 0;
   right: 30px;
-  flex-direction: row-reverse;
   z-index: 999;
 }
 .whatsapp-ico-1 img {
   width: 80px;
   height: auto;
   cursor: pointer;
-  transition: transform 0.3s ease;
 }
 .whatsapp-ico-1 img:hover {
   transform: scale(1.2);
+  transition: transform 0.3s ease;
 }
