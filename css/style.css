@@ -177,9 +177,9 @@ a {
   color: #0c0c0c;
 }
 .sidebar .bar p {
+  width: 100%;
   font-size: 18px;
   text-align: justify;
-  grid-template-columns: 1fr 1.5fr;
   margin-bottom: 14px;
   color: #000000;
 }
@@ -191,8 +191,7 @@ a {
   display: flex;
   align-items: center;
   gap: 24px;
-  margin-left: 48px;
-  border-radius: 16px;
+  border-radius: 10px;
 }
 
 .tratar-hero .container .paragraf h3 {
@@ -201,11 +200,21 @@ a {
   margin: 18px auto;
   text-shadow: 2px 2px 4px rgba(14, 10, 146, 0.5);
 }
-.tratar-hero .container .conteudo-1, .tratar-hero .container .conteudo-2, .tratar-hero .container .conteudo-3 {
+.tratar-hero .container .conteudo-1,
+.tratar-hero .container .conteudo-2,
+.tratar-hero .container .conteudo-3 {
   display: flex;
   justify-content: center;
 }
-.tratar-hero .container .conteudo-1 .top-1, .tratar-hero .container .conteudo-1 .top-2, .tratar-hero .container .conteudo-1 .top-3, .tratar-hero .container .conteudo-2 .top-1, .tratar-hero .container .conteudo-2 .top-2, .tratar-hero .container .conteudo-2 .top-3, .tratar-hero .container .conteudo-3 .top-1, .tratar-hero .container .conteudo-3 .top-2, .tratar-hero .container .conteudo-3 .top-3 {
+.tratar-hero .container .conteudo-1 .top-1,
+.tratar-hero .container .conteudo-1 .top-2,
+.tratar-hero .container .conteudo-1 .top-3,
+.tratar-hero .container .conteudo-2 .top-1,
+.tratar-hero .container .conteudo-2 .top-2,
+.tratar-hero .container .conteudo-2 .top-3,
+.tratar-hero .container .conteudo-3 .top-1,
+.tratar-hero .container .conteudo-3 .top-2,
+.tratar-hero .container .conteudo-3 .top-3 {
   margin: 14px;
   border: 1px none;
   max-width: 500px;
@@ -216,13 +225,53 @@ a {
   position: relative;
   transition: box-shadow 0.3s ease;
 }
-.tratar-hero .container .conteudo-1 .top-1:hover, .tratar-hero .container .conteudo-1 .top-2:hover, .tratar-hero .container .conteudo-1 .top-3:hover, .tratar-hero .container .conteudo-2 .top-1:hover, .tratar-hero .container .conteudo-2 .top-2:hover, .tratar-hero .container .conteudo-2 .top-3:hover, .tratar-hero .container .conteudo-3 .top-1:hover, .tratar-hero .container .conteudo-3 .top-2:hover, .tratar-hero .container .conteudo-3 .top-3:hover {
+.tratar-hero .container .conteudo-1 .top-1:hover,
+.tratar-hero .container .conteudo-1 .top-2:hover,
+.tratar-hero .container .conteudo-1 .top-3:hover,
+.tratar-hero .container .conteudo-2 .top-1:hover,
+.tratar-hero .container .conteudo-2 .top-2:hover,
+.tratar-hero .container .conteudo-2 .top-3:hover,
+.tratar-hero .container .conteudo-3 .top-1:hover,
+.tratar-hero .container .conteudo-3 .top-2:hover,
+.tratar-hero .container .conteudo-3 .top-3:hover {
   box-shadow: 0 0 20px rgba(66, 95, 240, 0.8);
 }
-.tratar-hero .container .conteudo-1 .top-1:hover::before, .tratar-hero .container .conteudo-1 .top-1:hover::after, .tratar-hero .container .conteudo-1 .top-2:hover::before, .tratar-hero .container .conteudo-1 .top-2:hover::after, .tratar-hero .container .conteudo-1 .top-3:hover::before, .tratar-hero .container .conteudo-1 .top-3:hover::after, .tratar-hero .container .conteudo-2 .top-1:hover::before, .tratar-hero .container .conteudo-2 .top-1:hover::after, .tratar-hero .container .conteudo-2 .top-2:hover::before, .tratar-hero .container .conteudo-2 .top-2:hover::after, .tratar-hero .container .conteudo-2 .top-3:hover::before, .tratar-hero .container .conteudo-2 .top-3:hover::after, .tratar-hero .container .conteudo-3 .top-1:hover::before, .tratar-hero .container .conteudo-3 .top-1:hover::after, .tratar-hero .container .conteudo-3 .top-2:hover::before, .tratar-hero .container .conteudo-3 .top-2:hover::after, .tratar-hero .container .conteudo-3 .top-3:hover::before, .tratar-hero .container .conteudo-3 .top-3:hover::after {
+.tratar-hero .container .conteudo-1 .top-1:hover::before, .tratar-hero .container .conteudo-1 .top-1:hover::after,
+.tratar-hero .container .conteudo-1 .top-2:hover::before,
+.tratar-hero .container .conteudo-1 .top-2:hover::after,
+.tratar-hero .container .conteudo-1 .top-3:hover::before,
+.tratar-hero .container .conteudo-1 .top-3:hover::after,
+.tratar-hero .container .conteudo-2 .top-1:hover::before,
+.tratar-hero .container .conteudo-2 .top-1:hover::after,
+.tratar-hero .container .conteudo-2 .top-2:hover::before,
+.tratar-hero .container .conteudo-2 .top-2:hover::after,
+.tratar-hero .container .conteudo-2 .top-3:hover::before,
+.tratar-hero .container .conteudo-2 .top-3:hover::after,
+.tratar-hero .container .conteudo-3 .top-1:hover::before,
+.tratar-hero .container .conteudo-3 .top-1:hover::after,
+.tratar-hero .container .conteudo-3 .top-2:hover::before,
+.tratar-hero .container .conteudo-3 .top-2:hover::after,
+.tratar-hero .container .conteudo-3 .top-3:hover::before,
+.tratar-hero .container .conteudo-3 .top-3:hover::after {
   animation: borderAnimation 1s infinite alternate ease-in-out;
 }
-.tratar-hero .container .conteudo-1 .top-1::before, .tratar-hero .container .conteudo-1 .top-1::after, .tratar-hero .container .conteudo-1 .top-2::before, .tratar-hero .container .conteudo-1 .top-2::after, .tratar-hero .container .conteudo-1 .top-3::before, .tratar-hero .container .conteudo-1 .top-3::after, .tratar-hero .container .conteudo-2 .top-1::before, .tratar-hero .container .conteudo-2 .top-1::after, .tratar-hero .container .conteudo-2 .top-2::before, .tratar-hero .container .conteudo-2 .top-2::after, .tratar-hero .container .conteudo-2 .top-3::before, .tratar-hero .container .conteudo-2 .top-3::after, .tratar-hero .container .conteudo-3 .top-1::before, .tratar-hero .container .conteudo-3 .top-1::after, .tratar-hero .container .conteudo-3 .top-2::before, .tratar-hero .container .conteudo-3 .top-2::after, .tratar-hero .container .conteudo-3 .top-3::before, .tratar-hero .container .conteudo-3 .top-3::after {
+.tratar-hero .container .conteudo-1 .top-1::before, .tratar-hero .container .conteudo-1 .top-1::after,
+.tratar-hero .container .conteudo-1 .top-2::before,
+.tratar-hero .container .conteudo-1 .top-2::after,
+.tratar-hero .container .conteudo-1 .top-3::before,
+.tratar-hero .container .conteudo-1 .top-3::after,
+.tratar-hero .container .conteudo-2 .top-1::before,
+.tratar-hero .container .conteudo-2 .top-1::after,
+.tratar-hero .container .conteudo-2 .top-2::before,
+.tratar-hero .container .conteudo-2 .top-2::after,
+.tratar-hero .container .conteudo-2 .top-3::before,
+.tratar-hero .container .conteudo-2 .top-3::after,
+.tratar-hero .container .conteudo-3 .top-1::before,
+.tratar-hero .container .conteudo-3 .top-1::after,
+.tratar-hero .container .conteudo-3 .top-2::before,
+.tratar-hero .container .conteudo-3 .top-2::after,
+.tratar-hero .container .conteudo-3 .top-3::before,
+.tratar-hero .container .conteudo-3 .top-3::after {
   content: "";
   position: absolute;
   width: 0;
@@ -232,25 +281,57 @@ a {
   box-sizing: border-box;
   transition: width 0.3s ease;
 }
-.tratar-hero .container .conteudo-1 .top-1::before, .tratar-hero .container .conteudo-1 .top-2::before, .tratar-hero .container .conteudo-1 .top-3::before, .tratar-hero .container .conteudo-2 .top-1::before, .tratar-hero .container .conteudo-2 .top-2::before, .tratar-hero .container .conteudo-2 .top-3::before, .tratar-hero .container .conteudo-3 .top-1::before, .tratar-hero .container .conteudo-3 .top-2::before, .tratar-hero .container .conteudo-3 .top-3::before {
+.tratar-hero .container .conteudo-1 .top-1::before,
+.tratar-hero .container .conteudo-1 .top-2::before,
+.tratar-hero .container .conteudo-1 .top-3::before,
+.tratar-hero .container .conteudo-2 .top-1::before,
+.tratar-hero .container .conteudo-2 .top-2::before,
+.tratar-hero .container .conteudo-2 .top-3::before,
+.tratar-hero .container .conteudo-3 .top-1::before,
+.tratar-hero .container .conteudo-3 .top-2::before,
+.tratar-hero .container .conteudo-3 .top-3::before {
   top: 0;
   left: 0;
   border-right-color: transparent;
   border-bottom-color: transparent;
 }
-.tratar-hero .container .conteudo-1 .top-1::after, .tratar-hero .container .conteudo-1 .top-2::after, .tratar-hero .container .conteudo-1 .top-3::after, .tratar-hero .container .conteudo-2 .top-1::after, .tratar-hero .container .conteudo-2 .top-2::after, .tratar-hero .container .conteudo-2 .top-3::after, .tratar-hero .container .conteudo-3 .top-1::after, .tratar-hero .container .conteudo-3 .top-2::after, .tratar-hero .container .conteudo-3 .top-3::after {
+.tratar-hero .container .conteudo-1 .top-1::after,
+.tratar-hero .container .conteudo-1 .top-2::after,
+.tratar-hero .container .conteudo-1 .top-3::after,
+.tratar-hero .container .conteudo-2 .top-1::after,
+.tratar-hero .container .conteudo-2 .top-2::after,
+.tratar-hero .container .conteudo-2 .top-3::after,
+.tratar-hero .container .conteudo-3 .top-1::after,
+.tratar-hero .container .conteudo-3 .top-2::after,
+.tratar-hero .container .conteudo-3 .top-3::after {
   bottom: 0;
   right: 0;
   border-top-color: transparent;
   border-left-color: transparent;
 }
-.tratar-hero .container .conteudo-1 .top-1 span, .tratar-hero .container .conteudo-1 .top-2 span, .tratar-hero .container .conteudo-1 .top-3 span, .tratar-hero .container .conteudo-2 .top-1 span, .tratar-hero .container .conteudo-2 .top-2 span, .tratar-hero .container .conteudo-2 .top-3 span, .tratar-hero .container .conteudo-3 .top-1 span, .tratar-hero .container .conteudo-3 .top-2 span, .tratar-hero .container .conteudo-3 .top-3 span {
+.tratar-hero .container .conteudo-1 .top-1 span,
+.tratar-hero .container .conteudo-1 .top-2 span,
+.tratar-hero .container .conteudo-1 .top-3 span,
+.tratar-hero .container .conteudo-2 .top-1 span,
+.tratar-hero .container .conteudo-2 .top-2 span,
+.tratar-hero .container .conteudo-2 .top-3 span,
+.tratar-hero .container .conteudo-3 .top-1 span,
+.tratar-hero .container .conteudo-3 .top-2 span,
+.tratar-hero .container .conteudo-3 .top-3 span {
   font-size: 32px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.tratar-hero .container .conteudo-1 .top-1 p, .tratar-hero .container .conteudo-1 .top-2 p, .tratar-hero .container .conteudo-1 .top-3 p, .tratar-hero .container .conteudo-2 .top-1 p, .tratar-hero .container .conteudo-2 .top-2 p, .tratar-hero .container .conteudo-2 .top-3 p, .tratar-hero .container .conteudo-3 .top-1 p, .tratar-hero .container .conteudo-3 .top-2 p, .tratar-hero .container .conteudo-3 .top-3 p {
+.tratar-hero .container .conteudo-1 .top-1 p,
+.tratar-hero .container .conteudo-1 .top-2 p,
+.tratar-hero .container .conteudo-1 .top-3 p,
+.tratar-hero .container .conteudo-2 .top-1 p,
+.tratar-hero .container .conteudo-2 .top-2 p,
+.tratar-hero .container .conteudo-2 .top-3 p,
+.tratar-hero .container .conteudo-3 .top-1 p,
+.tratar-hero .container .conteudo-3 .top-2 p,
+.tratar-hero .container .conteudo-3 .top-3 p {
   font-size: 16px;
   color: #000000;
   text-align: center;
@@ -514,7 +595,7 @@ a {
   transition: transform 0.3s ease;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1279px) {
   .menu {
     background-color: rgb(45, 45, 45);
     width: 100%;
@@ -565,17 +646,92 @@ a {
   .btn-menu {
     padding: 15px;
   }
+  .hero-section {
+    max-width: 100%;
+    height: 50px;
+  }
+  .hero-section .content h1 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 150px;
+    color: #fefefe;
+  }
+  .main-container .sidebar {
+    max-width: 100%;
+    margin-bottom: 600px;
+    flex-direction: column;
+    row-gap: 24px;
+  }
+  .main-container .sidebar .bar .conteudo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 500px;
+  }
+  .main-container .sidebar .bar .conteudo p {
+    width: 550px;
+  }
+  .main-container .image img {
+    width: 100%;
+    height: auto;
+  }
+  .main-container .main-container .sidebar {
+    margin-bottom: 300px;
+  }
+  .main-container .main-container .sidebar .bar .conteudo {
+    margin-top: 250px;
+  }
+  .main-container .main-container .sidebar .bar .conteudo p {
+    width: 100%;
+  }
+  .main-hero .container .hero-content {
+    flex-direction: column;
+    row-gap: 24px;
+  }
 }
-.hero-section {
-  max-width: 100%;
-  height: 50px;
+@media (max-width: 1279px) and (max-width: 1023px) {
+  .tratar-hero .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .tratar-hero .container .paragraf .conteudo-1,
+  .tratar-hero .container .paragraf .conteudo-2,
+  .tratar-hero .container .paragraf .conteudo-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .tratar-hero .container .paragraf .conteudo-1 .top-1,
+  .tratar-hero .container .paragraf .conteudo-1 .top-2,
+  .tratar-hero .container .paragraf .conteudo-1 .top-3,
+  .tratar-hero .container .paragraf .conteudo-2 .top-1,
+  .tratar-hero .container .paragraf .conteudo-2 .top-2,
+  .tratar-hero .container .paragraf .conteudo-2 .top-3,
+  .tratar-hero .container .paragraf .conteudo-3 .top-1,
+  .tratar-hero .container .paragraf .conteudo-3 .top-2,
+  .tratar-hero .container .paragraf .conteudo-3 .top-3 {
+    margin-bottom: 20px;
+  }
+  .tratar-hero .container .paragraf .conteudo-1 p,
+  .tratar-hero .container .paragraf .conteudo-2 p,
+  .tratar-hero .container .paragraf .conteudo-3 p {
+    max-width: 100%;
+  }
 }
-.hero-section .content h1 {
-  text-align: center;
+.form-hero {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
-  margin-top: 150px;
-  color: #000000;
+  flex-direction: column;
+  margin: 100px;
+}
+.form-hero .form-image img {
+  margin-bottom: 54px;
 }
