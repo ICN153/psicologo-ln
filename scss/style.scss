@@ -86,17 +86,16 @@ a {
   top: 0;
   position: sticky;
   z-index: 100;
-
+  flex-direction: column;
   //background-color: red;
 }
 
 .container {
+  //flex-direction: column;
   max-width: 1140px;
   height: auto;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -125,6 +124,8 @@ a {
 }
 
 .menu {
+  display: flex;
+  gap: 20px;
   a {
     text-decoration: none;
     color: #585858;
@@ -135,6 +136,11 @@ a {
     justify-content: space-between;
     display: inline-block;
     //padding: 0;
+  }
+  .menu-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 .menu a:hover {
@@ -572,6 +578,7 @@ a {
 }
 
 .whatsapp-ico-1 {
+  
   flex-direction: row-reverse;
   position: fixed;
   bottom: 0;
@@ -651,6 +658,7 @@ a {
 
   .btn-menu {
     padding: 15px;
+    flex-direction: column;
   }
 
   .hero-section {
@@ -716,6 +724,7 @@ a {
       }
     }
   }
+  
   .main-hero {
     .container {
       .hero-content {
@@ -759,9 +768,12 @@ a {
 }
 
 .container {
-  flex-direction: column;
+ 
   .hero-content {
-    flex-direction: column;
+  
+    .hero{
+      flex-direction: column;
+    }
     gap: 15px;
     .image-container {
       max-width: 100%;

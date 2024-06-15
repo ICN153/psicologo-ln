@@ -72,6 +72,7 @@ a {
   top: 0;
   position: sticky;
   z-index: 100;
+  flex-direction: column;
 }
 
 .container {
@@ -79,8 +80,6 @@ a {
   height: auto;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -107,6 +106,10 @@ a {
   transform: scale(0.96);
 }
 
+.menu {
+  display: flex;
+  gap: 20px;
+}
 .menu a {
   text-decoration: none;
   color: #585858;
@@ -116,6 +119,11 @@ a {
   display: flex;
   justify-content: space-between;
   display: inline-block;
+}
+.menu .menu-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .menu a:hover {
@@ -645,6 +653,7 @@ a {
   }
   .btn-menu {
     padding: 15px;
+    flex-direction: column;
   }
   .hero-section {
     max-width: 100%;
@@ -725,12 +734,11 @@ a {
     max-width: 100%;
   }
 }
-.container {
-  flex-direction: column;
-}
 .container .hero-content {
-  flex-direction: column;
   gap: 15px;
+}
+.container .hero-content .hero {
+  flex-direction: column;
 }
 .container .hero-content .image-container {
   max-width: 100%;
