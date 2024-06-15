@@ -725,13 +725,14 @@ a {
     max-width: 100%;
   }
 }
-.form-hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.container {
   flex-direction: column;
-  margin: 100px;
 }
-.form-hero .form-image img {
-  margin-bottom: 54px;
+.container .hero-content {
+  flex-direction: column;
+  gap: 15px;
+}
+.container .hero-content .image-container {
+  max-width: 100%;
+  margin-bottom: 20px;
 }
