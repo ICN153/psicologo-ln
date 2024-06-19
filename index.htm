@@ -13,6 +13,10 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+  
+   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,6 +25,10 @@
       href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Teko&display=swap"
       rel="stylesheet"
     />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz@0,9..144;1,9..144&display=swap"
+      rel="stylesheet">
 
     <!-- css bootstrap -->
     <link
@@ -43,10 +51,10 @@
   </head>
   <body>
     <header class="header">
-      <div class="backgroun-image">
+      <div class="background-image">
         <div class="container">
           <div class="logo">
-            <img src="img/psicologia.png" alt="" />
+            <img src="img/psicologia.png" alt="Logo" />
           </div>
           <div class="none">
             <p>Psicólogo</p>
@@ -58,21 +66,20 @@
             <div class="bar"></div>
             <div class="bar"></div>
           </div>    
-    
-          <!-- Adicione a classe .menu-container aqui -->
+  
+          <!-- Menu de navegação -->
           <nav class="menu menu-container">
-            <a href="#">Bem Vindo</a>
-            <a href="#">Sobre Mim</a>
-            <a href="#">Serviço</a>
-            <a href="#">Contato</a>
+            <a href="#bem-vindo">Bem Vindo</a>
+            <a href="#sobre-mim">Sobre Mim</a>
+            <a href="#servico">Serviço</a>
+            <a href="#contato">Contato</a>
           </nav>
-          
         </div>
       </div>
     </header>
     
 
-    <section class="hero-section">
+    <section class="hero-section" id="bem-vindo">
       <div class="content">
         <h1>
           É importante lembrar que não estamos sozinhos em nossas lutas; buscar
@@ -85,7 +92,7 @@
     <div class="main-container">
       <aside class="sidebar container">
         <div class="bar">
-          <div class="conteudo">
+          <div class="conteudo" data-aos="fade-down"  data-aos-duration="800">
             <h2>O que Iremos Trarar</h2>
 
             <p>
@@ -113,7 +120,7 @@
           </div>
         </div>
 
-        <div class="image">
+        <div class="image" data-aos="fade-up"  data-aos-duration="800">
           <img src="img/engin-akyurt-KHDwnq57MUw-unsplash (1).jpg" alt="" />
         </div>
       </aside>
@@ -123,7 +130,7 @@
       <div class="container">
         <div class="paragraf">
           <h3>Principais Abordagem</h3> 
-        <div class="conteudo-1">
+        <div class="conteudo-1" data-aos="zoom-in" data-aos-duration="3000">
           <div class="top-1">
             <span>Transtornos psicológicos:</span>
             <p>
@@ -151,7 +158,7 @@
           </div>
         </div>
 
-         <div class="conteudo-2">
+         <div class="conteudo-2" div data-aos="zoom-in-up" data-aos-duration="2000" >
           <div class="top-2">
             <span> Relações interpessoais:</span>
             <p>
@@ -175,7 +182,7 @@
             </p>
           </div>
         </div> 
-        <div class="conteudo-3">
+        <div class="conteudo-3" div data-aos="zoom-in-up" data-aos-duration="2000">
           <div class="top-3">
             <span> Saúde mental:</span>
             <p>
@@ -193,44 +200,44 @@
         </div>
     </article>
 
-    <div class="main-hero">
+    <section class="main-hero" id="sobre-mim">
       <div class="container">
-      <div class="hero-content">
-      <div class="image-container">
-        <img src="img/imagem_1-removebg-preview.png" alt="">
+        <div class="hero-content">
+          <div class="image-container" data-aos="fade-up"
+          data-aos-duration="3000">
+            <img src="img/imagem_1-removebg-preview.png" alt="Sobre Mim">
+          </div>
+          <div class="sobre-mim" data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500">
+            <h2 id="h-title">Sobre Mim</h2>
+            <p id="nome">Me chamo Lenilson de Almeida</p>
+            <p>Sou psicólogo clínico, formado pela universidade Estácio de Sá,
+              Pós-graduado em saúde mental (Universidade Facuminas). Minha abordagem é TCC.
+            </p>
+            <p>Minha abordagem é entender a forma como o ser humano interpreta
+              os acontecimentos da forma que aquilo nos afeta, e não os acontecimentos
+              em si.
+            </p>
+            <p>O processo terapêutico consiste em passar da necessidade de apoiar-se
+              no outro para a capacidade de apoiar-se em si mesmo, desenvolvendo
+              suas potencialidades e encontrando seu sentido na vida.
+            </p>
+          </div>
+        </div>
       </div>
-      <div class="sobre-mim">
-        <h2 id="h-title">Sobre Mim</h2>
-        <p id="nome">Me chamo Lenilson de almeida</p>
-
-        <p>Sou psicólogo clinico, formado pela universidade Estacio de Sá,
-          Pós graduado em saúde mental (Universidade facuminas). Minha abordagem e TCC.
-        </p>
-
-        <P>Minha abordagem e entender a forma como o ser humano interpreta
-          os acontecimentos da forma que aquilo nos afeta, e não os acontecimentos
-          em si.
-        </P>
-
-        <p>O processo terapêutico consiste em passar da necessidade de apoiar-se
-          no outro para a capacidade de apoiar-se em si mesmo, desenvolvendo
-          suas potencialidades e encontrando seu sentido na vida.
-        </p>
-      </div>
-      </div>
-    </div>
-    </div>
+    </section>
 
     <body class="bg-gradient-custom">
      
     </body>
 
     <div class="acordion-hero">
-      <div class="container">
+      <div class="container" >
         <h2>Duvidas Frequentes</h2>
       </div>
     </div>
-    <div class="container fluid mb-5 ">
+    <div class="container fluid mb-5"  id="#Serviço">
       <div class="container-sm ">
         <div class="title-acordeon">
           <div class="accordion" id="accordionExample">
@@ -311,26 +318,27 @@
       </div>
     </div> 
 
-    <div class="container form-hero">
+    <section class="container form-hero" id="servico">
       <div class="hero">
-      <div class="form-image">
-        <img src="img/Anim_Psychology1-5a625b6f9e942700366bb7f0.gif" alt="">
+        <div class="form-image" data-aos="fade-up"
+        data-aos-duration="3000">
+          <img src="img/Anim_Psychology1-5a625b6f9e942700366bb7f0.gif" alt="Imagem Formulário">
+        </div>
+        <div class="content-title" data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500">
+          <h2 id="title-form">Vamos Conversar</h2>
+          <p id="text-form">Estamos aqui para responder a todas as suas perguntas, ouvir suas sugestões e ajudar você a iniciar uma nova jornada de vida.</p>
+          <form id="contactForm">
+            <input type="text" placeholder="Digite Seu Nome" required minlength="3" maxlength="30">
+            <input type="email" placeholder="Digite Seu Email" required>
+            <input type="text" placeholder="Digite Seu Telefone" required>
+            <textarea placeholder="Digite Sua Mensagem"></textarea>
+            <button type="submit" class="btn btn-outline">Enviar Mensagem</button>
+          </form>
+        </div>
       </div>
-    
-      <div class="content-title">
-        <h2 id="title-form">Vamos Conversar</h2>
-        <p id="text-form">Estamos aqui para responder a todas as suas perguntas, ouvir suas sugestões e ajudar você a iniciar uma nova jornada de vida.</p>
-        
-        <form id="contactForm">
-          <input type="text" placeholder="Digite Seu Nome" required minlength="3" maxlength="30">
-          <input type="email" placeholder="Digite Seu Email" required>
-          <input type="text" placeholder="Digite Seu Telefone" required>
-          <textarea placeholder="Digite Sua Mensagem"></textarea>
-          <button type="submit" class="btn btn-outline">Enviar Mensagem</button>
-        </form>
-      </div>
-    </div>
-  </div>
+    </section>
     
     <section class="swiper-hero">
         <!-- Slider main container -->
@@ -381,42 +389,31 @@
 
         </div>
     </section>
-    <div class="icon">
+    <div class="icon" id="contato">
       <div class="container">
         <div class="icon-button">
           <h1>Entre em Contato</h1>
-          
           <div class="img-icon">  
             <div class="img">
-
-            <a href="https://wa.me/+5521990520342" target="_blank">
-              <img src="img/icons8-whatsapp.svg" alt="">
-            </a>
-
-            </div>
-
-            <div class="img">
-
-              <a href="https://www.youtube.com/@psicologolenilsondealmeida7215" target="_blank">
-              <img src="img/icons8-youtube.svg" alt="">
+              <a href="https://wa.me/+5521990520342" target="_blank">
+                <img src="img/icons8-whatsapp.svg" alt="WhatsApp">
               </a>
-
+            </div>
+            <div class="img">
+              <a href="https://www.youtube.com/@psicologolenilsondealmeida7215" target="_blank">
+                <img src="img/icons8-youtube.svg" alt="YouTube">
+              </a>
             </div>
           </div>  
           <p>Cel.: 021 99052-0342</p>
-        
-          
         </div>
       </div>
     </div>
-    
-    
+  
     <div class="whatsapp-ico-1 container">
-
       <a href="https://wa.me/+5521990520342" target="_blank">
-      <img src="img/icons8-whatsapp.svg" alt="">
+        <img src="img/icons8-whatsapp.svg" alt="WhatsApp">
       </a>
-
     </div>
     
 
@@ -437,10 +434,17 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.swiper-button-prev',
   }
 });
-
-
 </script>
+   
+
 <script src="scripr.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
+<script>
+    AOS.init();
+  </script>
+
 <body>
 </html>
     
