@@ -116,10 +116,11 @@ a {
   
 
   .none {
+    
     display: block;
     text-align: center;
     color: #000000;
-    margin-left: 100px;
+    margin-left: 55px;;
     //padding: 1px;
   }
 }
@@ -855,6 +856,10 @@ a {
       }
     }
   }
+  @media (max-width:484px){
+    .none{
+      color: #ef2850;
+    }
+  }
 }
-
 
