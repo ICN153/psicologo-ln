@@ -83,8 +83,17 @@ a {
   justify-content: space-between;
   align-items: center;
 }
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 .container .logo img {
   width: 75px;
+  animation: rotate 6s linear infinite;
 }
 .container .none {
   display: block;
